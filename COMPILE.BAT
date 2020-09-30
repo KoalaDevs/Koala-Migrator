@@ -1,0 +1,1 @@
+"bin\BAT2EXE.BAT" "KOALA.BAT" "dist\KOALA.EXE"
