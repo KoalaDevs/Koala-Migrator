@@ -51,6 +51,16 @@ XCOPY /S /E /V /Q /F "%appdata%\gdlauncher_next\instances" "%appdata%\koalalaunc
 echo.
 echo.
 echo.
+cls 
+echo = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+echo Migrating all your GDL Libraries. This will take a long time!
+echo = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+cd "%appdata%\koalalauncher" > NUL
+if not exist instances\ mkdir instances\ > NUL
+XCOPY /S /E /V /Q /F "%appdata%\gdlauncher_next\datastore" "%appdata%\koalalauncher\datastore"
+echo.
+echo.
+echo.
 echo = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 echo Migration Successful! Do you want me to delete the duplicated instances?
 echo = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
